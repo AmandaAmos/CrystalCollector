@@ -1,0 +1,27 @@
+body {
+    background-color: lightgoldenrodyellow;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.jumbotron {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    text-emphasis: bold;
+    padding-top: 20%;
+    
+}
+
+#rdmNumCol {
+    text-align: left;
+}
+#scoreCol {
+    text-align: right;
+}
+#win {
+    text-align: left;
+}
+#loss {
+    text-align: right;
+}
