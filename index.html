@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <title>Crystal Collector Game</title>
 
@@ -28,6 +27,7 @@
                 <h1 class="text-center">Crystal Collector</strong></h1>
             </div>
         </div>
+
         <!--container for instructions-->
         <div class="container">
 
@@ -45,56 +45,55 @@
                 </div>
             </div>
             <br>
+            <br>
             <!--container for crystals and game stats-->
-            <div class="container">
-                <div class="row">
-                    <div class="text-success">
-                        <div class="col-md-6" id="rdmNumCol">
-                            <h4>Random Number:</h4>
-                            <p id="randomNumberId">0</p>
-                        </div>
-                    </div>
-                    <!-- user score-->
-                    <div class="col-md-6" id="scoreCol">
-                        <h4 class="text-dark">Your Score Is:</h>
-                            <p id="yourScore">0</p>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-
-        <!--crystal buttons-->
-        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="buttonsCol">
-                    <div class="row">
-                        <!--red crystal-->
-                        <div class="col">
-                            <img src="assets/images/redrupee.jpg" id="redCrystal">
-                        </div>
-                        <!--blue crystal-->
-                        <div class="col">
-                            <img src="assets/images/bluerupee.jpg" id="blueCrystal">
-                        </div>
-                        <!--gold crystal-->
-                        <div class="col">
-                            <img src="assets/images/goldrupee.jpg" id="goldCrystal">
-                        </div>
-                        <!--green crystal-->
-                        <div class="col">
-                            <img src="assets/images/greenrupee.jpg" id="greenCrystal">
-                        </div>
+                <div class="text-success">
+                    <div class="col-lg-6" id="rdmNumCol">
+                        <h4>Random Number:</h4>
+                        <p id="randomNumberId">0</p>
+                    </div>
+                </div>
+                <!-- user score-->
+                <div class="text-dark">
+                    <div class="col-lg-6" id="scoreCol">
+                        <h4>Your Score Is:</h>
+                        <p id="yourScoreIs">0</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <hr>
+        <!--crystal buttons-->
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="buttnsCol">
+                <div class="row">
+                    <!--red crystal-->
+                    <div class="col" id="redCrystal">
+                        <img src="assets/images/redrupee.jpg" alt="Red Crystal" id="redCrystal">
+                    </div>
+                    <!--blue crystal-->
+                    <div class="col" id="blueCrystal">
+                        <img src="assets/images/bluerupee.jpg" alt="Blue Crystal" id="blueCrystal">
+                    </div>
+                    <!--gold crystal-->
+                    <div class="col">
+                        <img src="assets/images/goldrupee.jpg" alt="Gold Crystal" id="goldCrystal">
+                    </div>
+                    <!--green crystal-->
+                    <div class="col">
+                        <img src="assets/images/greenrupee.jpg" alt="Green Crystal" id="greenCrystal">
                     </div>
                 </div>
             </div>
         </div>
-        <!--here is where win & lose messages are stored-->
-        <div class="row">
-            <div class="col-md-12">
-                <h4 id="message"></h4>
-            </div>
-        </div>
+
         <!--where wins & losses are stored-->
         <div class="row" id="gameStats">
             <!--wins-->
@@ -110,16 +109,24 @@
                 </div>
             </div>
         </div>
+        <!--here is where win & lose messages are stored-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 id="message"></h4>
+            </div>
+        </div>
         <!--reset the game -->
         <div class="row">
             <!-- reset -->
             <div class="col-md-12" id="resetCol">
-                <button type="button" class="btn btn-light">Reset Game</button>
+                <button type="button" class="btn btn-light" id="resetGame">Reset Game</button>
 
             </div>
 
         </div>
     </div>
+
     <footer>
         <div class="text-center">
             <h3 class="text-primary">Thanks for playing!</h3>
